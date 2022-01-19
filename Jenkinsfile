@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Build in progress'
+                sh 'build.sh'
             }
         }
         stage('Unit') {
